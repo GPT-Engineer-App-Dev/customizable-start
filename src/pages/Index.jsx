@@ -1,13 +1,18 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 function Index() {
   return (
     <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6">
-      {/* Update with components here - default to put new layout sections as separate components in the components folder, and import them here */}
-      <div>
-        <h1 className="text-3xl text-center">Your Blank Canvas</h1>
-        <p className="text-center">
-          Chat with the agent to start making edits.
-        </p>
-      </div>
+      <Card>
+        <CardHeader>
+          <CardTitle>Welcome to Your New App</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p>This is a bare-bones application that you can modify and build upon.</p>
+          <Button variant="primary" className="mt-4">Get Started</Button>
+        </CardContent>
+      </Card>
     </main>
   );
 }
